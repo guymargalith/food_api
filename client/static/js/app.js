@@ -33,9 +33,9 @@ function addFood(e) {
 }
 
 function retrieveFood(e) {
-	e.preventDefault();
-	let paragraph = document.querySelector("#paragraph");
-	paragraph.style.display = "block";
+	// e.preventDefault();
+	let paragraphs = document.querySelectorAll(".paragraph");
+	paragraphs.forEach(paragraph => (paragraph.style.display = "block"));
 	let select = document.querySelector("#foodsList");
 	const food = select.value;
 	fetch(`http://localhost:3000/foods/${food}`)
