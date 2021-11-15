@@ -1,6 +1,8 @@
 # What Are the Ingredients
 ## How to use
-- A local host must be initialised using dependencies like nodemon.
+- Run npm install in the terminal while inside the server directory.
+- Run "npm install cors", "npm install express" and "npm install nodemon" in the same terminal.
+- A local host must be initialised by running "npm run start" in the terminal.
 - Open the client side html file using a live server.
 - On the website, the name of a food and its ingredients (separated by a ", ") can be inputted and uploaded to the database using the submit button.
 - All the different foods stored on the database can be accessed using the drop down selector, where the information regarding the selection will be displayed below it.
