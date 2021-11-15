@@ -1,12 +1,10 @@
-// const app = require("./app");
+// const { retrieveFood } = require("./app");
 
-const form = document.querySelector("form");
-const burrito = document.querySelector("#burrito");
-const taco = document.querySelector("#taco");
-const fajita = document.querySelector("#fajita");
+const inputForm = document.querySelector("#inputform");
+const selectForm = document.querySelector("#showform");
+const foodsList = document.querySelector("#foodsList");
 
-form.addEventListener("submit", addFood);
-burrito.addEventListener("click", retrieveFood);
-taco.addEventListener("click", retrieveFood);
-fajita.addEventListener("click", retrieveFood);
+inputForm.addEventListener("submit", addFood);
+foodsList.addEventListener("change", retrieveFood);
 
+getFood();
