@@ -2,8 +2,9 @@
 
 const inputForm = document.querySelector("#inputform");
 const selectForm = document.querySelector("#showform");
+const foodsList = document.querySelector("#foodsList");
 
 inputForm.addEventListener("submit", addFood);
-selectForm.addEventListener("submit", retrieveFood);
+foodsList.addEventListener("change", retrieveFood);
 
 getFood();

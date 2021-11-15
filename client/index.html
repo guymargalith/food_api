@@ -10,24 +10,26 @@
     <title>Food Ingredients</title>
 </head>
 <body>
-    <h1>FOOD</h1>
+    <h1>What are the ingredients?</h1>
     <form id="inputform">
         <div>
-            <label for="name">Name of Food</label>
+            <label for="name">Name of food:</label>
             <input id="name" type="text">
         </div>
-        <label for="ingredients">Ingredients (please seperate each ingredient with a comma and a space)</label>
-        <textarea id="ingredients" cols="30" rows="10"></textarea>
-        <input type="submit">
+        <div>
+            <label for="ingredients">Ingredients: (please seperate each ingredient with a comma and a space)</label>
+            <textarea id="ingredients" cols="30" rows="10"></textarea>
+        </div>
+        <input type="submit" id="inputsub" value="Submit Food">
     </form>
 
     <form id="showform">
         <label for="foodsList">Pick a food to see the ingredients!</label>
         <select name="foodsList" id="foodsList">
         </select>
-        <input type="submit">
     </form>
 
-    <p id="paragraph">Food item: <span id="nameSpan"></span>, Ingredients: <span id="ingredientsSpan"></span></p>
+    <p class="paragraph">Ingredients for <span id="nameSpan"></span>:</p>
+    <p class="paragraph">You will need: <span id="ingredientsSpan"></span></p>
 </body>
 </html>
