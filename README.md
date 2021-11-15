@@ -7,5 +7,5 @@
 ## About
 In this project, an API was developed from scratch and then used to store information about the ingredients required to make different meals using javascript and express. 
 A client side was also developed using a combination of javascript, html and css. This was done as part of LAP 1 of futureproof's Conway cohort.
-## Creators
+## Contributors
 Emily Kral and Guy Margalith
