@@ -1,23 +1,27 @@
-// getFood();
+// const { retrieveFood } = require("./app");
 
-const form = document.querySelector("#inputform");
+const inputForm = document.querySelector("#inputform");
+const selectForm = document.querySelector("#showform");
 // const foodsList = document.querySelector("#foodsList");
 // const foodsNames = foodsList.children;
 // let foodsNamesList = document.querySelectorAll("#foodsList option");
 
-function addClicks() {
-	let foodsNamesList = document.querySelectorAll("#foodsList option");
-	console.log(foodsNamesList);
-	for (let i = 0; i < foodsNamesList.length; i++) {
-		console.log(foodsNamesList[i]);
-		foodsNamesList[i].addEventListener("change", retrieveFood);
-	}
-}
-form.addEventListener("submit", addFood);
+// function addClicks() {
+// 	let foodsNamesList = document.querySelectorAll("#foodsList option");
+// 	// console.log(foodsNamesList);
+// 	for (let i = 0; i < foodsNamesList.length; i++) {
+// 		// console.log(foodsNamesList[i]);
+// 		foodsNamesList[i].addEventListener("change", retrieveFood);
+// 	}
+// }
 
-function runLists() {
-	getFood();
-	setTimeout(addClicks, 1000);
-}
+inputForm.addEventListener("submit", addFood);
+selectForm.addEventListener("submit", retrieveFood);
 
-runLists();
+// function runLists() {
+// 	getFood();
+// 	setTimeout(addClicks, 1000);
+// }
+
+getFood();
+// runLists();
